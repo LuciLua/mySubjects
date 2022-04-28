@@ -1,0 +1,25 @@
+*::before, *, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: Ubuntu, sans-serif;
+    font-weight: 100;
+}
+
+body{
+    background-color: #1f1f1f;
+    color: rgb(250, 250, 250);
+}
+
+.defaultBlueContainers{
+    background-color: #4391f1;
+  
+    max-width: 800px;
+    width: 100%;
+  
+    border-radius: 3px;
+    box-shadow: 0 0 12px #121221;
+
+    margin: 5px 0;
+}

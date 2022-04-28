@@ -1,0 +1,51 @@
+.submitForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    border-bottom: 1px solid #ffffff44;
+    width: 100%;
+
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+
+  .buttonCollection {
+    // background-color: red;
+
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+
+    button {
+      margin: 5px;
+      border: none;
+      padding: 10px 20px;
+
+      border-radius: 3px;
+      font-weight: 700;
+
+      background-color: #fff;
+
+      //   save btn
+      &:nth-child(1) {
+        color: green;
+      }
+      //   cancel btn
+      &:nth-child(2) {
+        color: red;
+      }
+
+      &:focus {
+        outline: rgb(86, 164, 237) 2px solid;
+      }
+      &:hover {
+        background-color: #e3e3e3;
+        cursor: pointer;
+      }
+    }
+  }
+}

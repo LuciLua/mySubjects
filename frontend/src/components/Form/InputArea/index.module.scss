@@ -1,0 +1,24 @@
+.inputArea {
+//   background-color: rgb(56, 70, 70);
+  width: 100%;
+  max-width: 500px;
+
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin-bottom: 10px;
+  }
+
+  input {
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+
+    &:focus {
+      outline: rgb(86, 164, 237) 2px solid;
+    }
+  }
+}
