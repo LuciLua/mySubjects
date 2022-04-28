@@ -12,7 +12,7 @@ function Table() {
     const [date, setDate] = useState() 
 
     function setData(data){
-console.log("ola")
+    console.log("ola")
     }
 
     return (
