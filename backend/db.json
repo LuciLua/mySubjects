@@ -13,6 +13,27 @@
       "teacher": "Luiz Junior",
       "date": "Terça",
       "id": 2
+    },
+    {
+      "code": "ART319",
+      "subject": "Roteiro: Teoria e prática",
+      "teacher": "Sergio Puccini",
+      "date": "Quarta",
+      "id": 3
+    },
+    {
+      "code": "ART316",
+      "subject": "Teoria do cinema e do audiovisual I",
+      "teacher": "Reyna",
+      "date": "Quinta",
+      "id": 4
+    },
+    {
+      "code": "ART315",
+      "subject": "Produção  Audiovisual e Economia da Cultura",
+      "teacher": "Alessandra Brum",
+      "date": "Sexta",
+      "id": 5
     }
   ]
 }

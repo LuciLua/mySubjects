@@ -1,0 +1,33 @@
+.selectArea {
+//   background-color: rgb(56, 70, 70);
+  width: 100%;
+  max-width: 500px;
+
+  padding: 5px 9px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: none;
+  border-radius: 3px;
+  overflow: hidden;
+
+  select{
+    color: rgb(31, 31, 31);
+
+  }
+
+  
+  &:focus {
+    outline: rgb(86, 164, 237) 2px solid;
+  }
+
+  label {
+    margin-bottom: 10px;
+  }
+
+  option {
+    border: none;
+    color: rgb(134, 134, 134);
+  }
+}

@@ -3,6 +3,7 @@ import axios from "axios"
 
 import styles from "./index.module.scss"
 import InputArea from "./InputArea"
+import SelectArea from "./SelectArea"
 
 function Table() {
 
@@ -21,9 +22,11 @@ function Table() {
 
     }
 
-    function addValue(e:any) {
+    function addValue(e: any) {
         var valueInput = e.target.value
         var inputById = e.target.id
+
+        console.log(date)
 
         switch (inputById) {
             case "Code":
@@ -41,8 +44,6 @@ function Table() {
         }
     }
 
-
-
     return (
         <>
             <form className={`defaultBlueContainers ${styles.submitForm}`}>
@@ -50,7 +51,8 @@ function Table() {
                 <InputArea name="Code" onChangeAddValue={addValue} />
                 <InputArea name="Subject" onChangeAddValue={addValue} />
                 <InputArea name="Teacher" onChangeAddValue={addValue} />
-                <InputArea name="Date" onChangeAddValue={addValue} />
+                <SelectArea name="Date" onChangeAddValue={addValue} options={["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"]} />
+
                 <div className={styles.buttonCollection}>
                     <button type="submit" onClick={setData}>Add</button>
                     <button type="reset">Reset</button>
