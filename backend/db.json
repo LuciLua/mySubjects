@@ -2,21 +2,17 @@
   "subjects": [
     {
       "id": 1,
+      "code": "ART321",
       "subject": "Cinema Brasileiro I",
       "teacher": "Luis Alberto Rocha Melo",
       "date": "Segunda"
     },
     {
-      "id": 2,
+      "code": "ART281",
       "subject": "História e Estética do Cinema II",
-      "teacher": "Luis Júnior",
-      "date": "Terça"
-    },
-    {
-      "subject": "aula de yoga",
-      "teacher": "luci lua",
-      "date": "agora",
-      "id": 3
+      "teacher": "Luiz Junior",
+      "date": "Terça",
+      "id": 2
     }
   ]
 }

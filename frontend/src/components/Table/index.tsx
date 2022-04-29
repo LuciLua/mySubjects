@@ -9,7 +9,7 @@ function Table(props:any) {
             <table className={`defaultBlueContainers ${styles.tableSubjects}`}>
                 <thead>
                     <tr>
-                        <th>ID</th>
+                        <th>Code</th>
                         <th>Subject</th>
                         <th>Teacher</th>
                         <th>Date</th>
@@ -19,7 +19,7 @@ function Table(props:any) {
                     {subjects.map(subject => {
                         return (
                             <tr key={subject.id}>
-                                <td>{subject.id}</td>
+                                <td>{subject.code}</td>
                                 <td>{subject.subject}</td>
                                 <td>{subject.teacher}</td>
                                 <td>{subject.date}</td>
