@@ -6,10 +6,10 @@ import styles from "../styles/home.module.scss"
 import axios from "axios"
 import { useEffect } from "react"
 
-
 async function getSubjects() {
+    const BASE_URL = process.env.BASE_URL
     try {
-        const resp = await axios.get("http://localhost:3001/subjects")
+        const resp = await axios.get(BASE_URL)
         const data = await resp.data
         return data
     } catch (erro) {
@@ -27,7 +27,7 @@ export async function getStaticProps(ctx) {
 }
 
 
-function Home( props ) {
+function Home( props:any ) {
 
     const { subjects } = props
 

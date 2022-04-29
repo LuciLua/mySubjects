@@ -9,10 +9,8 @@ interface SelectAreaProps {
 
 function SelectArea(props: SelectAreaProps) {
 
-    const { options, onChangeAddValue, value, name } = props
+    const { options, onChangeAddValue, name } = props
     
-    console.log(value)
-
     return (
         <div className={styles.selectArea}>
             <label htmlFor="options">Date</label>
