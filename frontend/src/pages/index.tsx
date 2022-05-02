@@ -22,7 +22,8 @@ export async function getStaticProps(ctx) {
     return {
         props: {
             subjects
-        }
+        },
+        revalidade: 60
     }
 }
 
