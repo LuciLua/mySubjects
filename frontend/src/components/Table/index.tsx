@@ -11,7 +11,7 @@ function Table(props: any) {
 
     async function removeData(idParam) {
         setID(idParam)
-        axios.delete(`http://localhost:3001/subjects/${id}`)
+        axios.delete(`http://localhost:3001/subjects/${id}` || `https://mysubjects.herokuapp.com/subjects/${id}`)
     }
 
     return (

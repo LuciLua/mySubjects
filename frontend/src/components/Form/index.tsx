@@ -13,7 +13,7 @@ function Table() {
     const [date, setDate] = useState<string>("Segunda")
 
     function setData() {
-        return axios.post('http://localhost:3001/subjects', {
+        return axios.post('http://localhost:3001/subjects' || "https://mysubjects.herokuapp.com/subjects", {
             code: code,
             subject: subject,
             teacher: teacher,

@@ -9,7 +9,7 @@ import { useEffect } from "react"
 async function getSubjects() {
     const BASE_URL = process.env.BASE_URL
     try {
-        const resp = await axios.get(BASE_URL)
+        const resp = await axios.get("https://mysubjects.herokuapp.com/subjects" || BASE_URL)
         const data = await resp.data
         return data
     } catch (erro) {
