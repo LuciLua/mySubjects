@@ -27,3 +27,11 @@
 
 //     return { destiny, setDestiny }
 // }
+
+
+export default function contextBefore(){
+    return(
+        <>
+        </>
+    )
+}

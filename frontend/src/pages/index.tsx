@@ -5,13 +5,13 @@ import styles from "../styles/home.module.scss"
 
 import axios from "axios"
 import { useEffect, useState } from "react"
-import AreaProvider, { useDestiny } from "../contexts/subjectsContexts"
+// import AreaProvider, { useDestiny } from "../contexts/subjectsContexts"
 import Navigator from "../components/Navigator/Nav"
 
 async function getSubjects() {
     const BASE_URL = process.env.BASE_URL
     try {
-        const resp = await axios.get(BASE_URL)
+        const resp = await axios.get(BASE_URL || 'https://localhost:3001/subjects')
         const data = await resp.data
         return data
     } catch (erro) {
