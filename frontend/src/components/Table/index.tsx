@@ -1,9 +1,18 @@
+import axios from "axios"
+import { useState } from "react"
 import Icons from "./ActionIcons/Icons"
 import styles from "./index.module.scss"
 
 function Table(props: any) {
 
     const { subjects } = props
+
+    const [id, setID] = useState<number>(null)
+
+    async function removeData(idParam) {
+        setID(idParam)
+        axios.delete(`http://localhost:3001/subjects/${id}`)
+    }
 
     return (
         <>
@@ -26,7 +35,7 @@ function Table(props: any) {
                                 <td>{subject.teacher}</td>
                                 <td>{subject.date}</td>
                                 <td className={styles.actionsContainer}>
-                                    <div className={`${styles.actionsBtn} ${styles.del}`}>
+                                    <div onClick={() => removeData(subject.id)} className={`${styles.actionsBtn} ${styles.del}`}>
                                         <Icons icon="remove" />
                                     </div>
                                     <div className={`${styles.actionsBtn} ${styles.edit}`}>

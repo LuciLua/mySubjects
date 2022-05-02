@@ -3,6 +3,8 @@
   position: relative;
   width: 100%;
 
+  overflow: hidden;
+
   thead {
     tr {
       background-color: #00000080;
@@ -53,10 +55,10 @@
 
           }
           .edit {
-            color: rgb(21, 80, 163);
+            color: rgb(156, 194, 247);
           }
           .del {
-            color: rgb(154, 6, 6);
+            color: rgb(244, 75, 75);
           }
         }
       }
@@ -68,17 +70,19 @@
 @media only screen and (max-width: 580px) {
   .tableSubjects{
     max-width: 400px;
+    width: 100%;
+
     tbody{
       tr{
         td{
           min-width: fit-content;
-          overflow: hidden;
-          text-overflow: ellipsis;
           max-width: 110px;
-          white-space: nowrap;
+
           font-size: 15px;
-          line-clamp: 2;
-          -webkit-line-clamp: 2;
+          
+          text-overflow: ellipsis;
+          overflow: hidden;  
+          white-space: nowrap;
         }
       }
     }

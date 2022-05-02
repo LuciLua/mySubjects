@@ -7,10 +7,10 @@ import SelectArea from "./SelectArea"
 
 function Table() {
 
-    const [code, setCode] = useState<string>()
-    const [subject, setSubject] = useState<string>()
-    const [teacher, setTeacher] = useState<string>()
-    const [date, setDate] = useState<string>()
+    const [code, setCode] = useState<string>("COD000")
+    const [subject, setSubject] = useState<string>("Something")
+    const [teacher, setTeacher] = useState<string>("Teacher")
+    const [date, setDate] = useState<string>("Segunda")
 
     function setData() {
         return axios.post('http://localhost:3001/subjects', {
