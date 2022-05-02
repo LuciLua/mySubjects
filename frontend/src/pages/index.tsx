@@ -4,12 +4,14 @@ import Form from "../components/Form"
 import styles from "../styles/home.module.scss"
 
 import axios from "axios"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
+import AreaProvider, { useDestiny } from "../contexts/subjectsContexts"
+import Navigator from "../components/Navigator/Nav"
 
 async function getSubjects() {
     const BASE_URL = process.env.BASE_URL
     try {
-        const resp = await axios.get("https://mysubjects.herokuapp.com/subjects" || BASE_URL)
+        const resp = await axios.get(BASE_URL)
         const data = await resp.data
         return data
     } catch (erro) {
@@ -28,17 +30,31 @@ export async function getStaticProps(ctx) {
 }
 
 
-function Home( props:any ) {
+function Home({ subjects }) {
 
-    const { subjects } = props
+    // const { destiny, setDestiny } = useDestiny()
 
-    useEffect(() => {
-    })
+    // Alternate state
+    const [estado, setEstado] = useState("table")
+
+    function changeState() {
+        estado == "table" ? setEstado("form") : setEstado("table")
+    }
+
+    // Change visually the page
+    function toggleAreas() {
+        if (estado == "form") { return (<Form />) }
+        if (estado == "table") { return (<Table subjects={subjects} />) }
+    }
 
     return (
         <div className={styles.contentHome}>
-            <Table subjects={subjects} />
-            <Form />
+            {/* <AreaProvider> */}
+
+            <Navigator dest={estado} click={() => changeState()} />
+            {toggleAreas()}
+
+            {/* </AreaProvider> */}
         </div>
     )
 }

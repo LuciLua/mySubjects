@@ -1,19 +1,17 @@
 import styles from "./index.module.scss"
 
-function Navigator(props: any) {
+// import { useDestiny } from "../../contexts/subjectsContexts"
 
-    const { table, form } = props
+function Navigator({ click, dest }) {
+
+    // const { destiny, setDestiny } = useDestiny()
 
     return (
         <>
             <div className={styles.navigatorContainer}>
-
                 <ul className={styles.navigator}>
-                    <li>
-                        <a>table</a>
-                    </li>
-                    <li>
-                        <a>form</a>
+                    <li onClick={click}>
+                        {dest}
                     </li>
                 </ul>
             </div>

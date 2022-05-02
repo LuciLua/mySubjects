@@ -1,11 +1,12 @@
-import Navigator from '../components/Navigator/nav'
+import Navigator from '../components/Navigator/Nav'
 import '../styles/globals.scss'
+
+import AreaProvider from '../contexts/subjectsContexts'
 
 function App({ Component, pageProps }) {
     return (
         <>
             <Component {...pageProps} />
-            <Navigator paths={["form", "table"]} />
         </>
     )
 }

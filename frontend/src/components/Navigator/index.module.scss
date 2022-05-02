@@ -11,7 +11,8 @@
 
   .navigator {
     width: 30%;
-    background-color: rgba(0, 0, 0, 0.398);
+    background-color: rgba(24, 24, 24, 0.824);
+    backdrop-filter: blur(20px);
     display: flex;
     justify-content: center;
     align-items: center;
