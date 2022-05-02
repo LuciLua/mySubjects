@@ -1,46 +1,39 @@
 {
   "subjects": [
     {
-      "id": 1,
       "code": "ART321",
       "subject": "Cinema Brasileiro I",
       "teacher": "Luis Alberto Rocha Melo",
-      "date": "Segunda"
+      "date": "Segunda",
+      "id": 1
     },
     {
       "code": "ART281",
       "subject": "História e Estética do Cinema II",
-      "teacher": "Luiz Junior",
+      "teacher": "Luiz Júnior",
       "date": "Terça",
       "id": 2
     },
     {
       "code": "ART319",
-      "subject": "Roteiro: Teoria e prática",
-      "teacher": "Sergio Puccini",
+      "subject": "Roteiro: Teoria e Prática",
+      "teacher": "Sergio Jose Puccini",
       "date": "Quarta",
       "id": 3
     },
     {
       "code": "ART316",
-      "subject": "Teoria do cinema e do audiovisual I",
-      "teacher": "Reyna",
+      "subject": "Teoria do Cinema e Do Audiovisual I",
+      "teacher": "Carlos Reyna",
       "date": "Quinta",
       "id": 4
     },
     {
       "code": "ART315",
-      "subject": "Produção  Audiovisual e Economia da Cultura",
+      "subject": "Produção Audiovisual e Economia da Cultura",
       "teacher": "Alessandra Brum",
       "date": "Sexta",
       "id": 5
-    },
-    {
-      "code": "ING",
-      "subject": "Inglês",
-      "teacher": "Ramon",
-      "date": "Sábado",
-      "id": 6
     }
   ]
 }
