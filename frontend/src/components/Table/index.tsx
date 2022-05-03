@@ -35,11 +35,11 @@ function Table(props: any) {
                                 <td>{subject.teacher}</td>
                                 <td>{subject.date}</td>
                                 <td className={styles.actionsContainer}>
-                                    <div onClick={() => removeData(subject.id)} className={`${styles.actionsBtn} ${styles.del}`}>
-                                        <Icons icon="remove" />
-                                    </div>
                                     <div className={`${styles.actionsBtn} ${styles.edit}`}>
                                         <Icons icon="edit" />
+                                    </div>
+                                    <div onClick={() => removeData(subject.id)} className={`${styles.actionsBtn} ${styles.del}`}>
+                                        <Icons icon="remove" />
                                     </div>
                                 </td>
                             </tr>
