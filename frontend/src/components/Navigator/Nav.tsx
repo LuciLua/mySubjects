@@ -2,7 +2,12 @@ import styles from "./index.module.scss"
 
 // import { useDestiny } from "../../contexts/subjectsContexts"
 
-function Navigator({ click, dest }) {
+interface NavigatorProps {
+    click: any,
+    dest: string
+}
+
+function Navigator({ click, dest }: NavigatorProps) {
 
     // const { destiny, setDestiny } = useDestiny()
 

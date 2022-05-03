@@ -4,7 +4,7 @@ import Form from "../components/Form"
 import styles from "../styles/home.module.scss"
 
 import axios from "axios"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 // import AreaProvider, { useDestiny } from "../contexts/subjectsContexts"
 import Navigator from "../components/Navigator/Nav"
 
