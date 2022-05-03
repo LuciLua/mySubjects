@@ -1,9 +1,8 @@
 .selectArea {
-//   background-color: rgb(56, 70, 70);
   width: 100%;
   max-width: 500px;
 
-  padding: 5px 9px;
+  padding: 10px 9px;
 
   display: flex;
   flex-direction: column;
@@ -12,12 +11,10 @@
   border-radius: 3px;
   overflow: hidden;
 
-  select{
-    color: rgb(31, 31, 31);
-
+  select {
+    color: rgb(17, 17, 17);
   }
 
-  
   &:focus {
     outline: rgb(86, 164, 237) 2px solid;
   }

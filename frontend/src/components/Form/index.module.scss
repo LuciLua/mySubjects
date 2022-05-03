@@ -30,37 +30,38 @@
       border-radius: 3px;
       font-weight: 700;
 
-      background-color: rgba(15, 15, 15, 0.382);
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.274);
+      background-color: transparent;
 
       transition: 0.3s;
 
       //   save btn
       &:nth-child(1) {
         color: rgb(255, 255, 255);
-        border: 1px solid rgba(12, 207, 45, 0.291);
+        border: 1px solid rgba(0, 0, 0, 0.174);
+        background-color: #1d4794;
       }
       //   cancel btn
       &:nth-child(2) {
-        color: rgb(207, 12, 12);
-        border: 1px solid rgba(207, 12, 12, 0.441);
+        color: rgb(255, 255, 255);
+        border: 1px solid transparent;
+        background-color: #ff0f0fa1;
       }
 
       &:focus {
         outline: rgb(86, 164, 237) 2px solid;
       }
       &:hover {
-        background-color: #191919;
         cursor: pointer;
-        box-shadow: 0 0 12px rgba(0, 0, 0, 0.774);
         transition: 0.3s;
         //   save btn
         &:nth-child(1) {
-          border: 1px solid rgb(12, 207, 45);
+          border: 1px solid rgba(8, 8, 120, 0.472);
+          background-color: #224380;
         }
         //   cancel btn
         &:nth-child(2) {
-          border: 1px solid rgb(207, 12, 12);
+          // border: 1px solid rgb(207, 12, 12);
+          background-color: #d01111a1;
         }
       }
     }

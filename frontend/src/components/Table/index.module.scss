@@ -70,13 +70,28 @@
     max-width: 400px;
     width: 100%;
 
+    overflow: hidden;
+
+    font-size: 14px;
+
+
+    thead{
+      tr{
+        th{
+          padding: 10px 5px;
+        }
+      }
+    }
+
     tbody {
+      padding: 0;
+      margin: 0;
       tr {
         td {
           min-width: fit-content;
-          max-width: 110px;
+          max-width: 20vw;
 
-          font-size: 15px;
+          padding: 5px;
 
           text-overflow: ellipsis;
           overflow: hidden;
